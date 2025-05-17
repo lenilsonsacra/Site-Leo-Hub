@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000 ;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size:1.8rem;
+    box-shadow: 0px 5px 19px rgba(0, 109, 233, 0.438);
+}
+
+header h1{
+      background: linear-gradient(90deg, #0055f2, #6dd8f3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+}
+
+.container{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img{
+    max-width: 500px;
+    border-radius: 4%;
+    box-shadow: 0px 0px 20px rgb(0, 153, 255);
+}
+
+.texto{
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    margin-left: 5%;
+}
+span{
+    color: rgb(23, 150, 224);
+}
+
+button{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #00ccffbe;
+    color: #ffffff;
+    font-size: 2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 10%;
+}
+
+button:hover{
+    background-color: #0044ff;
+    transform: scale(1.05);
+}
+
+
+
+@media screen and (max-width: 950px){
+
+    header{
+        font-size: 1.2rem;
+    }
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto{
+        margin-top: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    header{
+        font-size: 1rem;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image img{
+        max-width: 300px;
+        margin-bottom: 10%;
+    }
+
+    .texto{
+        margin-top: 10%;
+        margin-left: 0px;
+        line-height: 2rem;
+        font-size: 1rem;
+        margin: 0px 1rem;
+    }
+
+
+}
